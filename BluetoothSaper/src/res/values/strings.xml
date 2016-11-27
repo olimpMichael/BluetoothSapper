@@ -1,0 +1,168 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">BluetoothSapper</string>
+    <string name="preferences">Settings</string>
+
+    <!--  PrefActivity -->
+    <string-array name="texts">
+        <item>Number of players</item>
+        <item>Difficulty level</item>
+        <item>Field size</item>
+        <item>Records</item>
+        <item>Language</item>
+    </string-array>
+
+    <string name="lang">Language</string>
+    <string name="dfltLang">Русский</string>
+    <string-array name="dataLang">
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+
+    <string name="players">Number of players</string>
+    <string name="dfltPlayers">1</string>
+    <string-array name="dataPlayers">
+        <item>One player</item>
+        <item>Two players</item>
+    </string-array>
+    <string-array name="valPlayers">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="difficulty">Difficulty level</string>
+    <string name="dfltDifficulty">1</string>
+    <string-array name="dataDifficulty">
+        <item>Easy level</item>
+        <item>Average level</item>
+        <item>Hard level</item>
+    </string-array>
+    <string-array name="valDifficulty">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="prefDescription">Descripion of Game</string>
+
+
+    <string name="connect">Connect a device</string>
+    <string name="deviceNotConnected">Device is not connected</string>
+    <string name="deviceConnected">Device is connected with </string>
+    <string name="discoverable">Make discoverable</string>
+
+    <string name="size_summary">Current cell size is: %1$d</string>
+    <string name="size">Cell size</string>
+
+    <color name="white_color">#fff</color>
+    <color name="gray_color">#aaa</color>
+
+    <string name="victory">You have won!!!</string>
+    <string name="loss">You lose!!!</string>
+
+
+    <!--  Multiplayer -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving BluetoothSapper.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected</string>
+    <string name="youAreMiner">You are miner</string>
+    <string name="connectTo">Connect to </string>
+    <string name="choose">Choose who you want to play</string>
+    <string name="chooseMiner">Miner (arrange mines)</string>
+    <string name="chooseSapper">Sapper (defuse mines)</string>
+    <string name="youMiner">You are Miner</string>
+    <string name="youSapper">You are Sapper</string>
+    <string name="Cancel">Cancel</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="bluetoothNotAvailable">Bluetooth is not available</string>
+    <string name="bluetoothOn">BlueTooth Turned On</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="notPaired">Not Paired Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Toast -->
+    <string name="gameModeSingle">Game Mode single player</string>
+    <string name="gameModeTwo">Game Mode two players</string>
+
+    <!-- Description -->
+    <string name="description"><![CDATA[
+        <p><strong>«Minesweeper»</strong> - a logic game, which develops attention and logic.
+        Its main goal - to find and mark mines with flags.
+         You have to be very careful, as soon as you open the cage, under which is hidden
+          bomb, the game is over. Minesweeper is wrong only once.</p>
+
+        <p>Menu Settings : <img src="btnmenu.png" /> </p>
+        <p>1) Number of players. «One player» - single player game mode.
+         «Two players» - function allows two players to play with the two devices, on which
+          installed the game through Bluetooth connectivity.</p>
+        <p>2) Level of difficulty: «Easy», «Medium», «Hard». It affects the number of mines,
+         installed in the field.</p>
+        <p>3) Cell size influences the cell\'s size of the playing field, as well as the number of area cells.</p>
+        <p>4) Language - Change the application language. Supported languages: English and Russian.</p>
+        <p><img src="menu_en.png" /></p>
+
+        <p><strong>Game Mode «Single Player»</strong></p>
+        <p><img src="single.png" /></p>
+        <p>Opens the playing field. Under certain cells hidden «mines». The main task -
+         calculate them and not «blown». Number not found mines displayed in the upper left corner.</p>
+        <p>To start the game you have to click at any place on the field (the main task here -
+         not to run directly on the mine). Open some part of the field where the numbers appear.
+         All these numbers are used to facilitate the search for booby.</p>
+        <p><img src="first_step.png" /></p>
+        <p>The number in the cell indicates the number of mines located around the cell.
+         So the number «1» shows us that the cells located around it, is one mine.
+         If a single cell is unopened, then underneath it and hidden.
+          To mark a cell as a bomb activate selection mode mine by clicking on the icon
+           <img src="chbmine_notchecked.png" />  , while it will change to icon
+           <img src="chbmine_checked.png" />. In this mode, we note the mines. And click on the cell,
+            which we assume is mine. In this cell box will appear, and the counter mines,
+             who need to find, will decrease.</p>
+        <p><img src="second_step.png" /></p>
+        <p>To cancel the selection, once again in the mode of allocation of mines, click on the same cell.
+         The flag will disappear.</p>
+        <p>Calculating all the possible location of mines, you gradually open the card. Attentively
+         look and find explosive surprises: as soon get to the busy mine cage,
+         game over.</p>
+        <p>If you are uncomfortable constantly switch from isolation min mark empty mode
+        cell, you can long press on the cage of the field at once to make a move in
+        the opposite mode.</p>
+        <p>Your task - to mark all mines and to open the empty cells.</p>
+        <p><img src="finish.png" /></p>
+
+        <p><strong>Game Mode «Two players»</strong></p>
+        <p>1) On two devices, which you installed the game, turn on «Two Player» game mode. </p>
+        <p>2) If you have not turned on Bluetooth, you will be prompted to turn it on.
+        You need to respond positively to this request.</p>
+        <p><img src="bluetooth1_en.png" /></p>
+        <p>3) Then, you need to establish a connection between your devices.
+        To do this on one of the devices, click on the icon <img src="btnbluemenu.png" />
+        You will be shown a dialog:</p>
+        <p><img src="bluetooth2_en.png" /></p>
+        <p>4) Here you need to click on the item «Connect device».</p>
+        <p>5) Next, open the device selection window, the connection to which you want to install.</p>
+        <p><img src="bluetooth3_en.png" /></p>
+        <p>If the desired device does not notice you. Then the second device must open
+        visibility. To do this, repeat the steps for him the 1st to the 3rd, and then click «Open
+        visibility». Сlick on the «Device Scanning» on the first device. There will be
+        newly available device. Clicking on the name of device, connection with it is installed.</p>
+        <p>6) When connected to a device dialog appears «Choose who you want to play»</p>
+        <p><img src="bluetooth4_en.png" /></p>
+        <p>You need to select a player. The second device will automatically become opposing player.</p>
+        <p>7) The miner mode. You are placed mines on the field. After the laying of mines.
+        Send obtained Sapper field (another device). To do this, click on the button
+         <img src="btnsend.png" />.</p>
+        <p>At the same time on the second device generated miner box appears. Next to the sapper
+        the game follows the rules of the game in the usual sapper. If sapper disarm all mines, the miner
+        lose, otherwise - will win. The result of the game will be sent sappers miners.</p>
+        ]]>
+    </string>
+</resources>

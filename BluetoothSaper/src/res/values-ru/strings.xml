@@ -1,0 +1,173 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">BluetoothSapper</string>
+    <string name="preferences">Настройки</string>
+
+    <!--  PrefActivity -->
+    <string-array name="texts">
+        <item>Количество игроков</item>
+        <item>Уровень сложности</item>
+        <item>Размеры поля</item>
+        <item>Рекорды</item>
+        <item>Язык</item>
+    </string-array>
+
+    <string name="lang">Язык</string>
+    <string name="dfltLang">Русский</string>
+    <string-array name="dataLang">
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+
+    <string name="players">Количество игроков</string>
+    <string name="dfltPlayers">1</string>
+    <string-array name="dataPlayers">
+        <item>Один игрок</item>
+        <item>Два игрока</item>
+    </string-array>
+    <string-array name="valPlayers">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="difficulty">Уровень сложности</string>
+    <string name="dfltDifficulty">1</string>
+    <string-array name="dataDifficulty">
+        <item>Легкий</item>
+        <item>Средний</item>
+        <item>Сложный</item>
+    </string-array>
+    <string-array name="valDifficulty">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="prefDescription">Описание игры</string>
+
+
+    <string name="connect">Соединение устройства</string>
+    <string name="deviceNotConnected">Устройство не соединено</string>
+    <string name="deviceConnected">Устройство соединено с </string>
+    <string name="discoverable">Открыть видимость</string>
+
+
+    <string name="size_summary">Текущий размер клетки: %1$d</string>
+    <string name="size">Размер клетки</string>
+    <color name="white_color">#fff</color>
+    <color name="gray_color">#aaa</color>
+
+    <string name="victory">Вы выиграли!!!</string>
+    <string name="loss">Вы проиграли!!!</string>
+
+    <!--  Multiplayer -->
+    <string name="send">Отправить</string>
+    <string name="not_connected">Ваше устройство не соединено</string>
+    <string name="bt_not_enabled_leaving">Bluetooth недоступен. Покидаю BluetoothSapper.</string>
+    <string name="title_connecting">Соединение...</string>
+    <string name="title_connected_to">Соединение с <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">не соединено</string>
+    <string name="youAreMiner">Вы минер</string>
+    <string name="connectTo">Соединение с </string>
+    <string name="choose">Выберите кем хотите играть</string>
+    <string name="chooseMiner">Минер (расставляете мины)</string>
+    <string name="chooseSapper">Сапер (обезвреживаете мины)</string>
+    <string name="youMiner">Вы Минер</string>
+    <string name="youSapper">Вы Сапер</string>
+    <string name="Cancel">Отмена</string>
+
+
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">сканирование устройств...</string>
+    <string name="select_device">выбирете устройство для сканирования</string>
+    <string name="none_paired">Устройства не были спарены</string>
+    <string name="none_found">Ни одно из устройств не найдено</string>
+    <string name="title_paired_devices">Спаренные устройства</string>
+    <string name="title_other_devices">Другие доступные устройства</string>
+    <string name="bluetoothNotAvailable">Bluetooth недоступен</string>
+    <string name="bluetoothOn">BlueTooth включен</string>
+    <string name="cancelled">Отменено</string>
+    <string name="notPaired">Нет спаренных устройств</string>
+    <string name="button_scan">Сканирование устройств</string>
+
+    <!-- Toast -->
+    <string name="gameModeSingle">Режим игры одного игрока</string>
+    <string name="gameModeTwo">Режим игры двух игроков</string>
+
+    <!-- Description -->
+    <string name="description"><![CDATA[
+        <p><strong>«Сапер»</strong> – логическая игра, которая, развивает внимание и логику.
+            Основная ее цель — найти и обозначить флажками мины.
+            Нужно быть очень осторожным: как только вы открываете клетку, под которой спрятана
+            бомба, игра окончена. Сапер ошибается только один раз.</p>
+
+        <p>Меню Настроек : <img src="btnmenu.png" /> </p>
+        <p>1) Количество игроков. «Один игрок» - однопользовательский режим игры.
+            «Два игрока» - функция позволяющая играть двум игрокам с двух устройств, на которых
+            установлена игра посредством канала связи Bluetooth.</p>
+        <p>2) Уровень сложности: «Легкий», «Средний», «Сложный». Влияет на количество мин,
+            установленных на поле.</p>
+        <p>3) Размер клетки влияет на размер ячейки игрового поля, а также на количество ячеек поля.</p>
+        <p>4) Язык – смена языка приложения. Поддерживаемые языки: Английский и Русский.</p>
+        <p><img src="menu_ru.png" /></p>
+
+        <p><strong>Режим игры «Один игрок»</strong></p>
+        <p><img src="single.png" /></p>
+        <p>Открывается игровое поле. Под некоторыми клетками спрятаны «мины». Основная задача –
+        вычислить их и не «подорваться». Количество не найденных мин отображено в верхнем левом углу.</p>
+        <p>Чтобы начать игру нужно щелкнуть в произвольном месте на поле (главная задача тут –
+        не нарваться сразу на мину). Откроется некоторый участок поля, на котором появятся цифры.
+        Все эти цифры служат для облегчения поиска установленной мины.</p>
+        <p><img src="first_step.png" /></p>
+        <p>Цифра в клетке означает количество мин, расположенных вокруг этой ячейки.
+        Так цифра «1» показывает нам, что в расположенных вокруг нее ячейках, находится одна мина.
+        Если оказывается неоткрытой единственная ячейка, значит, под ней она и скрыта.
+        Чтобы пометить ячейку как бомбу включите режим выделения мин, нажав на иконку
+        <img src="chbmine_notchecked.png" />  , при этом она сменится на значок
+        <img src="chbmine_checked.png" />. В этом режиме мы отмечаем мины. И щелкаем по клетке, в
+        которой как мы предполагаем, находится мина. В этой клетке появится флажок, а счетчик мин,
+        которые нужно найти, уменьшится.</p>
+        <p><img src="second_step.png" /></p>
+        <p>Чтобы отменить выделение, еще раз в режиме выделения мин щелкните по этой же ячейке.
+        Флажок исчезнет.</p>
+        <p>Вычисляя все возможные места нахождения мин, вы понемногу открываете карту. Внимательно
+        смотрите и находите взрывоопасные сюрпризы: как только попадете на занятую миной клетку,
+        игра окончена.</p>
+        <p>Если вам неудобно постоянно переключаться из режима выделения мин в режим отметки пустых
+        клеток, то можете путем долгого нажатия по клетке поля сразу делать ход в
+        противоположном режиме.</p>
+        <p>Ваша задача – отметить все мины и раскрыть пустые клетки.</p>
+        <p><img src="finish.png" /></p>
+
+        <p><strong>Режим игры «Два игрока»</strong></p>
+        <p>1) На двух устройствах, которых установлена игра, включите режим игры «Два игрока». </p>
+        <p>2) Если у вас не включен Bluetooth, то вам будет предложено его включить.
+        Вам необходимо положительно ответить на этот запрос.</p>
+        <p><img src="bluetooth1_ru.png" /></p>
+        <p>3) Затем вам необходимо установить соединение между вашими устройствами.
+        Для этого на одном из устройств щелкните по иконке <img src="btnbluemenu.png" />
+        Вам будет показан диалог:</p>
+        <p><img src="bluetooth2_ru.png" /></p>
+        <p>4) Здесь вам необходимо щелкнуть на пункт «Соединение устройств».</p>
+        <p>5) Далее откроется окно выбора устройства, соединение с которым нужно установить.</p>
+        <p><img src="bluetooth3_ru.png" /></p>
+        <p>Если необходимого устройства вы не замечаете. То на втором устройстве необходимо открыть
+        видимость. Для этого повторите для него пункты с 1-го по 3-й и выберите пункт «Открыть
+        видимость» . А на первом устройстве нажмите на кнопку «Сканирование устройств». Появятся
+        новые доступные устройства. При клике по названию устройства, соединение
+        с ним будет установлено.</p>
+        <p>6) При установленном соединении на одном из устройств появляется диалог
+        «Кем вы хотите играть».</p>
+        <p><img src="bluetooth4_ru.png" /></p>
+        <p>Вам необходимо выбрать игрока. Второе устройство автоматически станет
+        противоположным игроком.</p>
+        <p>7) В режиме минера. Вы расставляете мины на поле. После установки мин.
+        Отправьте полученное поле саперу (другому устройству). Для этого нажмите на кнопку
+        <img src="btnsend.png" />.</p>
+        <p>При этом на втором устройстве появится сгенерированное минером поле. Далее для сапера
+        игра подчиняется правилам игры в обычного сапера. Если сапер обезвредит все мины, то минер
+        проиграет, в противном случае – выиграет. Результат игры сапера будет отправлен минеру.</p>
+        ]]>
+    </string>
+
+</resources>

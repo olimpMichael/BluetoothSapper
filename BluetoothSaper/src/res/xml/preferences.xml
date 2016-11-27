@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/preferences"
+        android:layout="@layout/pref_category">
+
+        <ListPreference
+            android:layout="@layout/pref_list"
+            android:entries="@array/dataPlayers"
+            android:entryValues="@array/valPlayers"
+            android:defaultValue="@string/dfltPlayers"
+            android:key="keyPlayers"
+            android:summary="Description of list"
+            android:title="@string/players">
+        </ListPreference>
+
+        <ListPreference
+            android:layout="@layout/pref_list"
+            android:entries="@array/dataDifficulty"
+            android:entryValues="@array/valDifficulty"
+            android:defaultValue="@string/dfltDifficulty"
+            android:key="keyDifficulty"
+            android:summary="Description of list"
+            android:title="@string/difficulty">
+        </ListPreference>
+
+        <ru.example.michael.saper.SeekBarPreference
+            android:layout="@layout/pref_list"
+            android:key="keySize"
+            android:title="@string/size"
+            android:dialogTitle="@string/size"
+            android:summary="@string/size_summary"
+            android:persistent="true"
+            android:defaultValue="75"
+            example:minValue="50"
+            example:maxValue="150"/>
+
+        <Preference
+            android:layout="@layout/pref_list"
+            android:key="prefDescription"
+            android:title="@string/prefDescription"/>
+
+
+        <ListPreference
+            android:layout="@layout/pref_list"
+            android:entries="@array/dataLang"
+            android:entryValues="@array/dataLang"
+            android:key="keyLang"
+            android:summary="Description of list"
+            android:title="@string/lang">
+        </ListPreference>
+        </PreferenceCategory>
+
+</PreferenceScreen>
