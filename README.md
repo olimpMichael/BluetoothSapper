@@ -1,4 +1,4 @@
-BluetoothSapper - an puzzle game for android devices. Classical Minesweeper, which realized the possibility of playing on Bluetooth between two android devices.
+BluetoothSapper - an logic game for android devices. Classical Minesweeper, which realized the possibility of playing on Bluetooth between two android devices.
 
 Note! GitHub repository contains only application source.
 
